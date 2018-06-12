@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#546E7A"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/team_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/a_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_a"
+                android:textSize="35sp"
+                android:fontFamily="@font/segoeuil"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/a_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="45sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/segoeuil"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/a_shot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="45sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/segoeuil"/>
+
+            <TextView
+                android:id="@+id/a_on_target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="45sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/segoeuil"/>
+
+            <TextView
+                android:id="@+id/a_tackle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="45sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/segoeuil"/>
+
+            <TextView
+                android:id="@+id/a_foul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="45sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/segoeuil"/>
+
+            <TextView
+                android:id="@+id/a_corner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="45sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/segoeuil"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/team_a"
+            android:layout_toLeftOf="@id/team_b"
+            android:layout_alignTop="@id/team_a"
+            android:layout_alignBottom="@id/team_a"
+            android:layout_marginTop="130dp">
+
+            <TextView
+                android:id="@+id/goals"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/goals"
+                android:textSize="25sp"
+                android:textColor="#212121"
+                android:fontFamily="@font/segoeuil"
+                android:textAlignment="center"
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:id="@+id/shots"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/shots"
+                android:textSize="25sp"
+                android:textColor="#212121"
+                android:fontFamily="@font/segoeuil"
+                android:textAlignment="center"
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:id="@+id/target"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/target"
+                android:textSize="21sp"
+                android:textColor="#212121"
+                android:fontFamily="@font/segoeuil"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:paddingTop="9dp"/>
+
+            <TextView
+                android:id="@+id/tackles"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/tackles"
+                android:textSize="25sp"
+                android:textColor="#212121"
+                android:fontFamily="@font/segoeuil"
+                android:textAlignment="center"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/fouls"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/fouls"
+                android:textSize="25sp"
+                android:textColor="#212121"
+                android:fontFamily="@font/segoeuil"
+                android:textAlignment="center"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/corners"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/corners"
+                android:textSize="25sp"
+                android:textColor="#212121"
+                android:fontFamily="@font/segoeuil"
+                android:textAlignment="center"
+                android:paddingTop="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/team_b"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/b_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_b"
+                android:textSize="35sp"
+                android:fontFamily="@font/segoeuil"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/b_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="45sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/segoeuil"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/b_shot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="45sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/segoeuil"/>
+
+            <TextView
+                android:id="@+id/b_on_target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="45sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/segoeuil"/>
+
+            <TextView
+                android:id="@+id/b_tackle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="45sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/segoeuil"/>
+
+            <TextView
+                android:id="@+id/b_foul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="45sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/segoeuil"/>
+
+            <TextView
+                android:id="@+id/b_corner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="45sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/segoeuil"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

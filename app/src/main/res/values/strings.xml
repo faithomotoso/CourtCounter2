@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Score Counter</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="zero">0</string>
+    <string name="reset">Reset</string>
+    <string name="stats">Stats</string>
+
+    <string name="goal">Goal!</string>
+    <string name="shot">Shot</string>
+    <string name="on_target">On Target</string>
+    <string name="tackle">Tackle</string>
+    <string name="foul">Foul</string>
+    <string name="corner">Corner</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!--Strings for stats-->
+    <string name="goals">Goals</string>
+    <string name="shots">Shots</string>
+    <string name="target">Shots On Target</string>
+    <string name="tackles">Tackles</string>
+    <string name="fouls">Fouls</string>
+    <string name="corners">Corners</string>
+</resources>
